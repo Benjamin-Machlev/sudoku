@@ -1,0 +1,99 @@
+body{
+  background-image: url(background\ image\ sudoku.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.main {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#title {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#username,#password,::placeholder{
+  color: blanchedalmond;
+}
+
+#errorUN,#errorPA{
+  background-color:blanchedalmond;
+  width: 180px;
+  margin: 0 auto;
+}
+
+
+#welcome{
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#level{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table {
+  margin: 1em auto;
+  background-color: blanchedalmond;
+}
+
+td {
+  border: 1px solid; /*  כל הגבולות  */
+} 
+
+td:first-child {
+  border-left: solid; /* גבול שמאלי חיצוני */
+}
+
+td:nth-child(3n) {
+  border-right: solid; /* גבולות מאוזנים וימני */
+}
+
+tr:first-child {
+  border-top: solid; /* גבול הטבלה העליון */
+}
+
+tr:nth-child(3n) td {
+  border-bottom: solid; /* גבולות אנכיים והתחתון */
+}
+
+input{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+}
+
+#button{
+  width: 180px;
+  position: absolute;
+  top: 115%;
+  left:50%;
+  margin-left: -90px;
+}
+
+#welldone{
+  color: blanchedalmond;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  margin-left: -320px;
+  margin-top: -110px;
+  font-size: 30px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- welcome to sudoku game -->
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> SUDOKU - Login Screen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href='icon sudoku.png'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="container c1">
+        <br>
+        
+        <div class="main">
+            <h1 id='title'>SUDOKU</h1>
+            <br>
+            <div>
+                <input id='username' class="w3-input w3-border w3-round-xxlarge" placeholder='User Name'>
+            </div>
+            <br>
+            <p id=errorUN></p>
+            <br>
+            <div>
+                <input id="password" type="password" class="w3-input w3-border w3-round-xxlarge" placeholder="Password"
+                    onmousedown="this.type='text'" onmouseup="this.type='password'" onmousemove="this.type='password'">
+                </div>
+            <br>
+            <p id="errorPA"></p>
+            <br>
+            <div>
+                <button onclick="checkLogin()" class="w3-button w3-red w3-round-xxlarge"> Let's Play SUDOKU </button>
+            </div>
+            <br>
+            <div>
+              <a  href="easy.html"> <button abbr title="only Easy mode"  class="w3-button w3-red w3-round-xxlarge"> Guest mode </button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
